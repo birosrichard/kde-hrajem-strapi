@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pubs",
+  "info": {
+    "singularName": "pub",
+    "pluralName": "pubs",
+    "displayName": "Pub"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Web": {
+      "type": "string"
+    },
+    "City": {
+      "type": "enumeration",
+      "enum": [
+        "Praha 1",
+        "Praha 2",
+        "Praha 3",
+        "Praha 4",
+        "Praha 5",
+        "Praha 6",
+        "Praha 7",
+        "Praha 8",
+        "Praha 9",
+        "Praha 10",
+        "Praha 11",
+        "Praha 12",
+        "Praha 13",
+        "Praha 14",
+        "Praha 15",
+        "Praha 16",
+        "Praha 17",
+        "Praha 18",
+        "Praha 19",
+        "Praha 20",
+        "Praha 21",
+        "Praha 22"
+      ],
+      "required": true
+    },
+    "Address": {
+      "type": "string",
+      "required": true
+    },
+    "Beer": {
+      "type": "enumeration",
+      "enum": [
+        "Kozel 11",
+        "Pilsner Urquell",
+        "Radegast"
+      ]
+    },
+    "TV": {
+      "type": "enumeration",
+      "enum": [
+        "O2 Sport",
+        "ČT Sport",
+        "Sport 1",
+        "Sport 2"
+      ]
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
